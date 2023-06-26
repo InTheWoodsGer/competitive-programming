@@ -1,7 +1,7 @@
 from adventofcode.utils import solve
 
 
-def solve_part_i(inp, debug):
+def solve_part_i(inp, **kwargs):
     return inp.count("(") - inp.count(")")
 
 

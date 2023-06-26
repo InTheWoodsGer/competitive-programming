@@ -19,7 +19,7 @@ def solve(
             with open(test_case, "r") as f:
                 test_case = f.read()
 
-            test_case_result = solver(test_case, debug)
+            test_case_result = solver(test_case, debug=debug)
             print(f"   Expected result: {test_expected_results[i]}, actual result: {test_case_result}")
             if test_case_result != test_expected_results[i]:
                 test_failure = True
@@ -31,4 +31,4 @@ def solve(
     with open(my_input_filename, "r") as f:
         my_input = f.read()
 
-    print(f"The result for my input: {solver(my_input, debug)}\n")
+    print(f"The result for my input: {solver(my_input, debug=debug)}\n")
