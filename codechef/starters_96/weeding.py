@@ -23,3 +23,8 @@ Yes
 for tc in range(int(input())):
     n, m, k = map(int, input().split())
     a = list(map(int, input().split()))
+
+    if a[-1] + k - 1 <= m:
+        print("yes")
+    else:
+        print("no")
