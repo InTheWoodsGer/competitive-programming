@@ -6,9 +6,9 @@ https://www.codechef.com/START96
 |----------------------|-------|-------|-------|-------|------|
 | AB Difference        | X     |       |       |       | X    |
 | Bells of Pilgrimage  | X     | X     |       |       | X    |
-| Weeding              | X     | X     |       |       |      |
-| Remove Multiples     | X     | X     | X     |       |      |
-| Swap the Numbers     | X     | X     | X     | X     |      |
+| Weeding              | X     | X     |       |       | X    |
+| Remove Multiples     | X     | X     | X     |       | X    |
+| Swap the Numbers     | X     | X     | X     | X     | X    |
 | Mex Array            | X     | X     | X     | X     |      |
 | Zero Array           | X     | X     | X     | X     |      |
 | Remove Stones        | X     | X     | X     | X     |      |
@@ -141,3 +141,39 @@ For each test case, output on a new line the maximum cost required to convert S 
 - 1≤N≤10<sup>9</sup>
 - 1≤M≤N
 - The sum of M over all test cases does not exceed 3×10<sup>5</sup> 
+
+## Swap the Numbers
+
+**Problem**
+
+You're given an array A=[A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>N</sub>] containing N integers.
+You also have an integer K.
+
+You can perform the following operation on this array:
+- Choose indices i and j such that ∣i−j∣≥K, and swap A<sub>i</sub> and A<sub>j</sub>. 
+That is, you can swap the values of two indices that are at a distance of at least 
+K from each other.
+
+- Find the lexicographically smallest array that can be reached, if you perform the above operation several (possibly, zero) times.
+
+Note: For two arrays X and Y of the same length, X is said to be lexicographically smaller than Y if there exists an index i (1≤i≤N) such that:
+- X<sub>1</sub>=Y<sub>1</sub>, X<sub>2</sub>=Y<sub>2</sub>, ...,X<sub>i-1</sub>=Y<sub>i-1</sub>; and
+- X<sub>i</sub> < Y<sub>i</sub>
+ 
+**Input Format**
+
+- The first line of input will contain a single integer T, denoting the number of test cases.
+- Each test case consists of two lines of input.
+  - The first line of each test case contains two space-separated integers N and K.
+  - The next line contains N space-separated numbers, the values A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>N</sub>.
+
+**Output Format**
+
+For each test case, print on a new line N space-separated integers — the lexicographically smallest array possible after applying the above operation several times.
+
+**Constraints**
+
+- 1≤T≤10<sup>4</sup>
+- 1≤N,K≤10<sup>5</sup>
+- 1≤A<sub>i</sub>≤10<sup>9</sup>
+- The sum of N across all tests won't exceed 10<sup>6</sup>.
