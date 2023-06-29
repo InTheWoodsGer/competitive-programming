@@ -104,3 +104,40 @@ Each letter of the output may be printed in either uppercase or lowercase, i.e, 
 - 1≤A<sub>1</sub><A<sub>2</sub><A<sub>3</sub><…<A<sub>N</sub>≤M≤10<sup>9</sup>
 - 1≤K≤10<sup>9</sup>
 - The sum of N across all tests won't exceed 2⋅10<sup>5</sup>.
+
+## Remove Multiples
+
+**Problem**
+
+You are given integers N and M.
+
+You have with you the set S={1,2,3,…,N}.
+
+You are also given a set Q of size M, which is a subset of the set S.
+You are required to convert S into Q using the following operation:
+
+- Choose an integer k (1≤k≤N) such that there exists a multiple of k in S, and remove the smallest multiple of k from S.
+This incurs a cost of k.
+
+For example, if S={1,3,4,6} and you choose k=2, you delete the smallest multiple of 2 present in S (which is 4) for a cost of 2.
+
+After this, S will be {1,3,6}.
+
+Find the maximum cost required to convert S to Q.
+
+**Input Format**
+
+- The first line of input will contain a single integer T, denoting the number of test cases.
+- Each test case consists of two lines of input.
+  - The first line of each test case contains two space-separated integers N and M — the number of elements in the set S and set Q respectively.
+  - The second line contains M spaced integers, denoting the elements of the set Q.
+
+**Output Format**
+
+For each test case, output on a new line the maximum cost required to convert S to Q.
+
+**Constraints**
+- 1≤T≤10<sup>5</sup>
+- 1≤N≤10<sup>9</sup>
+- 1≤M≤N
+- The sum of M over all test cases does not exceed 3×10<sup>5</sup> 
