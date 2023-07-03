@@ -9,7 +9,7 @@ https://www.codechef.com/START96
 | Weeding              | X     | X     |       |       | X    |
 | Remove Multiples     | X     | X     | X     |       | X    |
 | Swap the Numbers     | X     | X     | X     | X     | X    |
-| Mex Array            | X     | X     | X     | X     |      |
+| Mex Array            | X     | X     | X     | X     | X    |
 | Zero Array           | X     | X     | X     | X     |      |
 | Remove Stones        | X     | X     | X     | X     |      |
 | Absolute Differences |       |       | X     | X     |      |
