@@ -177,3 +177,44 @@ For each test case, print on a new line N space-separated integers — the lexic
 - 1≤N,K≤10<sup>5</sup>
 - 1≤A<sub>i</sub>≤10<sup>9</sup>
 - The sum of N across all tests won't exceed 10<sup>6</sup>.
+
+## Mex Array
+
+**Problem**
+
+Given an array A containing N non-negative integers, you have to create a new array B that is formed in the following way:
+
+While A is not empty:
+- Choose an integer k (1≤k≤∣A∣). Here, ∣A∣ denotes the current length of A.
+- Choose k elements of A.
+- Append the MEX of these chosen elements to the end of array B, and erase them from the array A.
+
+That is, in each move you pick a non-empty subsequence of A, append its MEX to B, and delete the subsequence from A.
+
+Find the lexicographically maximum array B that can be formed via this process.
+
+Notes:
+- An array X is lexicographically greater than an array Y if:
+  - In the first position where X and Y differ, X<sub>i</sub>>Y<sub>i</sub>; or
+  - ∣X∣>∣Y∣ and Y is a prefix of X.
+- The MEX of a set of non-negative integers is the minimal non-negative integer that is not in the set. For example, MEX({1,2,3,2})=0 and MEX({0,1,2,5,4})=3.
+
+**Input Format**
+
+- The first line of the input contains a single integer T — the number of test cases. The description of test cases follows.
+- Each test case consists of two lines of input.
+  - The first line of each test case contains a single integer N — the number of elements in the array A.
+  - The second line of each test case contains N space-separated non-negative integers A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>N</sub>, where A<sub>i</sub> is the i<sup>th</sup> integer from the array A.
+
+**Output Format**
+
+For each test case, print two lines.
+- The first line should contain a single integer M — the length of the lexicographically maximum array B you can create.
+ - The second line should contain M space-separated integers, denoting the elements of the array B.
+
+**Constraints**
+
+- 1≤T≤10<sup>5</sup>
+- 1≤N≤2⋅10<sup>5</sup>
+- It is guaranteed that the sum of N over all test cases does not exceed 2*10<sup>5</sup>.
+- 0≤A<sub>i</sub>≤N.
