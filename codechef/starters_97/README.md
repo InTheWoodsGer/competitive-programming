@@ -91,3 +91,35 @@ For each query, output on a new line, the ROT-K cipher of string U.
 - 1≤N≤1000
 - S,T, and U contain lowercase english alphabets only.
 
+## Schrodinger Smiley
+
+**Problem**
+
+In the realm of emoticons, the Schrödinger smiley both smiles and frowns until its state is observed.
+
+Given a string S consisting only of :, (, and ) (colon, left parenthesis, and right parenthesis).
+
+We define a Schrödinger's Smiley as any positive number of right parenthesis between two colons. For example, :):, :))):, and :))))): are Schrödinger's smileys while :))(:, :(:, ::): and :: are not.
+
+Find the total number of substrings in S that are Schrödinger Smileys.
+
+A substring is obtained by deleting any (possibly zero) number of characters from the beginning and any (possibly zero) number of characters from the end of the string.
+
+**Input Format**
+
+- The first line of input will contain a single integer T, denoting the number of test cases.
+- Each test case consists of two lines of input.
+  - The first line of each test case contains an integer N, the length of the string S.
+  - The next line contains the string S.
+
+**Output Format**
+
+For each test case, output on a new line, the total number of substrings in S that are Schrödinger Smileys.
+
+**Constraints**
+
+- 1≤T≤10<sup>5</sup>
+- 1≤N≤10<sup>5</sup>
+- S consists of :, (, and ) only.
+- The sum of N over all test cases won't exceed 5⋅10<sup>5</sup>.
+
