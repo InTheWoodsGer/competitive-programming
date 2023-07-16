@@ -4,11 +4,11 @@ https://www.codechef.com/START97
 
 | Name                     | Div 4 | Div 3 | Div 2 | Div 1 | Done |
 |--------------------------|-------|-------|-------|-------|------|
-| 2000                     | X     |       |       |       |      |
-| Best of Two              | X     | X     |       |       |      |
-| Caesar Cipher            | X     | X     |       |       |      |
-| Schrodinger Smiley       | X     | X     | X     |       |      |
-| Triplets Min             | X     | X     | X     | X     |      |
+| 2000                     | X     |       |       |       | X    |
+| Best of Two              | X     | X     |       |       | X    |
+| Caesar Cipher            | X     | X     |       |       | X    |
+| Schrodinger Smiley       | X     | X     | X     |       | X    |
+| Triplets Min             | X     | X     | X     | X     | X    |
 | No Plaindrome            | X     | X     | X     | X     |      |
 | Make it Special          | X     | X     | X     | X     |      |
 | Unreachability Cost      | X     | X     | X     | X     |      |
@@ -122,4 +122,36 @@ For each test case, output on a new line, the total number of substrings in S th
 - 1≤N≤10<sup>5</sup>
 - S consists of :, (, and ) only.
 - The sum of N over all test cases won't exceed 5⋅10<sup>5</sup>.
+
+## Triplets Min
+
+**Problem**
+
+You are given an integer array A of size N.
+A triplet array is defined as the collection of min(A<sub>i</sub>, A<sub>j</sub>, A<sub>k</sub>) for all triplets (i,j,k), where 1≤i<j<k≤N.
+
+You are given Q queries of the following type:
+- Given an integer K, return the value of K<sup>th</sup> smallest element in the triplet array.
+
+**Input Format**
+
+- The first line of input will contain a single integer T, denoting the number of test cases.
+- Each test case consists of multiple lines of input.
+  - The first line of each test case contains two space-separated integers N and Q — the size of array A and the number of queries, respectively.
+  - The second line of each test case contains N space-separated integers A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>N</sub>.
+  - The following Q lines describe the queries. Each of these lines contain a single positive integer K.
+
+**Output Format**
+
+For each query, print a single line containing the K<sup>th</sup> smallest element in the triplet array.
+
+**Constraints**
+
+- 1≤T≤1000
+- 3≤N≤3⋅10<sup>5</sup>
+- 1≤Q≤3⋅10<sup>5</sup>
+- −10<sup>9</sup>≤A<sub>i</sub>≤10<sup>9</sup> 
+- 1≤K≤(N|3)
+- The sum of N over all test cases won't exceed 3⋅10<sup>5</sup>
+- The sum of Q over all test cases won't exceed 3⋅10<sup>5</sup>.
 
