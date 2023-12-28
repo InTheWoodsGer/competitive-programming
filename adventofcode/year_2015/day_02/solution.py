@@ -1,7 +1,7 @@
 from adventofcode.utils import solve
 
 
-def solve_part_i(inp:str, **kwargs):
+def solve_part_i(inp: str, **kwargs):
     total = 0
 
     for box in inp.splitlines():
@@ -12,12 +12,12 @@ def solve_part_i(inp:str, **kwargs):
     return total
 
 
-def solve_part_ii(inp:str, **kwargs):
+def solve_part_ii(inp: str, **kwargs):
     total = 0
 
     for box in inp.splitlines():
         h, w, l = map(int, box.split("x"))
-        total += 2 * (h + w + l - max(h, w, l)) + h * w * l
+        total += 2 * (h + w + l - max(h, w, l)) + (h * w * l)
 
     return total
 

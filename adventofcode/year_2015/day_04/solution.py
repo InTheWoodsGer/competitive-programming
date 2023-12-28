@@ -19,5 +19,5 @@ def solve_part_ii(inp: str, debug: bool = False):
     return solve_problem(inp, "000000", debug)
 
 
-solve(part=None, solver=solve_part_i, test_prefix="test_", test_expected_results=[609043, 1048970], debug=False)
-solve(part=None, solver=solve_part_ii, test_prefix=None, test_expected_results=None, debug=True)
+solve(part=None, solver=solve_part_i, test_prefix="test_", test_expected_results=[609043, 1048970])
+solve(part=None, solver=solve_part_ii, test_prefix=None, test_expected_results=None)

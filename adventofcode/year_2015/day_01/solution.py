@@ -1,11 +1,11 @@
 from adventofcode.utils import solve
 
 
-def solve_part_i(inp, **kwargs):
+def solve_part_i(inp: str, **kwargs):
     return inp.count("(") - inp.count(")")
 
 
-def solve_part_ii(inp, debug):
+def solve_part_ii(inp: str, debug: bool):
     cnt = 0
     floor = 0
     while floor != -1:
