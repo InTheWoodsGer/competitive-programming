@@ -48,5 +48,6 @@ def solve_part_ii(inp: str, debug: bool = False):
             nice_words_cnt += 1
     return nice_words_cnt
 
+
 solve(part=None, solver=solve_part_i, test_prefix="test_01_", test_expected_results=[1, 1, 0, 0, 0], debug=False)
 solve(part=None, solver=solve_part_ii, test_prefix="test_02_", test_expected_results=[1, 1, 0, 0], debug=False)
