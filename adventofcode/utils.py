@@ -20,15 +20,16 @@ def solve(
                 test_case = f.read()
 
             test_case_result = solver(test_case, debug=debug)
-            print(f"   Expected result: {test_expected_results[i]}, actual result: {test_case_result}")
+            print(f"\tExpected result: {test_expected_results[i]}, actual result: {test_case_result}")
             if test_case_result != test_expected_results[i]:
                 test_failure = True
 
         if test_failure:
             raise Exception("Test cases failed")
 
+    print("Executing on my input")
     my_input_filename = f"my_input{f'_{part}' if part else ''}.txt"
     with open(my_input_filename, "r") as f:
         my_input = f.read()
 
-    print(f"The result for my input: {solver(my_input, debug=debug)}\n")
+    print(f"\tThe result for my input: {solver(my_input, debug=debug)}\n")
