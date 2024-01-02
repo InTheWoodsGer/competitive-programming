@@ -24,3 +24,7 @@ The next password after abcdefgh is _abcdffaa_.
 The next password after _ghijklmn_ is _ghjaabcc_, because you eventually skip all the passwords that start with ghi..., since i is not allowed.
 
 Given Santa's current password (your puzzle input), what should his next password be?
+
+**Part Two**
+
+Santa's password expired again. What's the next one?
